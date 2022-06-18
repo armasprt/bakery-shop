@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Bell MT', serif;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo {
+    width: 80px;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: normal;
+    display: inline-block;
+    border-bottom: 3px solid #E6BA95;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    padding: 20px 30px;
+    color: #FAFDD6;
+    background-color: #E6BA95;
+    font-size: 21px;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.btn:hover {
+    padding: 20px 45px;
+    letter-spacing: 3px;
+}
+
+/*Membuat Header (Navigasi dan Banner)*/
+.header {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.navigation {
+    height: 70px;
+    color: #FAFDD6;
+    border-bottom: 1px solid #E6BA95;
+}
+
+.nav-left {
+    float: left;
+    padding-left: 50px;
+    padding-top: 13px;
+}
+
+.nav-right {
+    float: right;
+    line-height: 70px;
+    padding-right: 20px;
+}
+
+.nav-right ul li {
+    display: inline;
+    padding-right: 30px;
+}
+
+.nav-right ul li a {
+    font-weight: 300;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+.nav-right ul li a:hover {
+    color: #E6BA95;
+    padding-right: 15px;
+    font-weight: 900;
+}
+
+.header-banner {
+    clear: right;
+    background-image: linear-gradient(to bottom left, rgb(0,0,0,1), rgb(0,0,0,0.3)), url('../img/mae-mu-m9pzwmxm2rk-unsplash.jpg');
+    height: inherit;
+    background-size: cover;
+    display: block;
+    color: #FAFDD6;
+    text-align: center;
+    height: 680px;
+}
+
+.header-banner p {
+    padding-top: 250px;
+    letter-spacing: 2px;
+    padding-bottom: 25px;
+    font-size: 21px;
+}
+
+.header-banner h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.header-banner span {
+    color: #E6BA95;
+}
+
+/*Membuat Tentang Toko (About)*/
+.about {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+
+.about-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 350px;
+}
+
+.about-left {
+    float: left;
+    width: 50%;
+}
+
+.about-right {
+    float: right;
+    width: 50%;
+    text-align: left;
+}
+
+.about-right h3 {
+    font-size: 21px;
+    padding-bottom: 15px;
+}
+
+.about-right p {
+    font-size: 18px;
+    width: 500px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.about-left img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*Membuat Product (Product)*/
+.product {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.product-container {
+    width: 90%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.product-card {
+    float: left;
+    width: 25%;
+    transition: all 0.3s;
+}
+
+.product-card img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+    z-index: 5;
+}
+
+/*Membuat footer*/
+.footer-contact {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #E6BA95;
+    background-color: #FAFDD6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    clear: both;
+}
+
+.footer-contact img {
+    padding-bottom: 10px;
+}
+
+.footer-contact p {
+    color: #272725;
+}
+
+.footer-copy {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #272725;
+    background-color: #FAFDD6;
+}
+
+/*Responsive Tablet*/
+
+@media (max-width: 1000px) {
+    .about {
+        margin-bottom: 100px;
+    }
+    .about-left {
+        width: 100%;
+    }
+
+    .about-right {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .about-right p {
+        margin: 0 auto;
+    }
+
+    .product-container {
+        width: 90%;
+    }
+
+    .product-card {
+        width: 50%;
+    }
+}
+
+/*Responsive Mobile*/
+
+@media (max-width: 678px) {
+    .nav-left {
+        padding-left: 30px;
+    }
+
+    .nav-right {
+        padding-right: 10px;
+    }
+
+    .nav-right ul li a {
+        font-size: 16px;
+    }
+
+    .about-left img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .about-right p {
+        width: 400px;
+    }
+
+    .product-container {
+        width: 100%;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
